@@ -1,0 +1,127 @@
+body {
+    background-color: #d7d7d7;
+}
+
+.container {
+    padding: 0 50px;
+}
+
+.navbar>.container {
+    justify-content: flex-end;
+}
+
+.navbar {
+    background-color: #111;
+    padding: 0 40px;
+    justify-content: flex-end;
+}
+
+.nav-item {
+    padding: 5px 15px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.title-container {
+    justify-content: space-between;
+    flex-direction: row;
+    background-color: #333;
+    height: 46px;
+    margin: 0;
+    padding: 0;
+}
+
+.slide-title {
+    display: inline-flex;
+    padding: 8px 0 6px 18px;
+    font-size: 20px;
+    font-weight: normal;
+    color: #bcbcbc;
+}
+
+.page-number {
+    display: inline-flex;
+    float: right;
+    padding: 10px 136px 6px 0;
+    font-size: 13px;
+    font-weight: normal;
+    color: #eee;
+}
+
+.slide-nav {
+    display: block;
+    text-align: center;
+    justify-content: center;
+    height: 28px;
+    background: linear-gradient(#c00, 10%, #a00, 80%, #800);
+}
+
+.slide-nav>.nav-item {
+    transform: translateX(80px);
+    display: inline-flex;
+    padding: 0;
+    border: none;
+}
+
+.slide-nav>.nav-item>a {
+    color: #fff;
+    display: flex;
+    font-size: 12px;
+}
+
+.nav-link.active {
+    background-color: #fff;
+    color: #900;
+}
+
+a.nav-link {
+    display: inline-flex;
+    padding: 4px 30px;
+    height: 27px;
+    border: none;
+    transform: translateY(-2px);
+}
+
+.nav-link.active.show, .nav-link:hover {
+    color: #a00;
+    text-decoration: underline;
+}
+
+.nav-tabs .nav-link {
+    border: none;
+    border-radius: 0;
+}
+
+.tab-pane {
+    background-color: #fff;
+    padding: 20px;
+    max-width: 1400px;
+}
+
+.controls {
+    background-color: #fff;
+    justify-content: center;
+    display: flex;
+    max-width: 1400px;
+}
+
+.control-button {
+    color: #fff;
+    font-size: 10px;
+    background-color: #444;
+    border: none;
+    border-radius: 3px;
+    width: 70px;
+    height: 20px;
+}
+
+.audio-player {
+    color: #fff;
+    font-size: 10px;
+    background-color: #444;
+    border: none;
+    border-radius: 3px;
+    width: 170px;
+    height: 20px;
+    margin: 0 20px;
+}

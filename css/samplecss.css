@@ -1,0 +1,438 @@
+@charset "utf-8";
+body {
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 1em;
+	background-color: #013F3E;
+}
+h1 {
+	font-size: 1.5em;
+	color: #F60;
+	font-family: Candara, "Trebuchet MS", Arial;
+	margin-left: 2.3%;
+	margin-top: 30px;
+}
+h2 {
+	font-size: 1.3em;
+	color: #099;
+	font-family: Candara, "Trebuchet MS", Arial;
+	margin-top: 0px;
+}
+h2 a:link{
+	color: #099;
+	font-family: Candara, "Trebuchet MS", Arial;
+	margin-top: 0px;
+	font-weight: bold;
+}
+h3 {
+	font-size: 1.1em;
+	color: #393;
+	font-family: Candara, "Trebuchet MS", Arial;
+}
+
+
+.stearns {
+	color: #FFF;
+}
+.courseTitle {
+	color: #434343;
+}
+
+.iconText {
+	color: #FFF;
+}
+.pageCounter {
+	font-size: 0.9em;
+	color: #FFF;
+}
+.floatRight {
+	float: right;
+}
+.floatLeft {
+	float: left;
+	margin-right: 10px;
+}
+
+.gridContainer.clearfix #LayoutDiv1 #content iframe {
+	color: #090;
+	width: 100%;
+}
+.gridContainer.clearfix #LayoutDiv1 #footer #btnBack a {
+	color: #FFF;
+	text-decoration: none;
+}
+.gridContainer.clearfix #LayoutDiv1 #header #nav a {
+	color: #FFF;
+	text-decoration: none;
+}
+
+.gridContainer.clearfix #LayoutDiv1 #footer #btnNext a {
+	color: #FFF;
+	text-decoration: none;
+}
+a:link {
+	font-weight: normal;
+	color: #06F;
+	text-decoration: underline;
+}
+a:visited {
+	font-weight: normal;
+	color: #06F;
+	text-decoration: underline;
+}
+
+.marginRight {
+	margin-right: 10px;
+}
+.modalDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+	display: none;
+}
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+	display: block;
+}
+
+.modalDialog > div {
+	width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #999);
+	background: -webkit-linear-gradient(#fff, #999);
+	background: -o-linear-gradient(#fff, #999);
+}
+.close {
+	background: #ccc;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { background: #00d9ff; }
+.leading {
+	line-height: 30px;
+}
+audio {
+	width: 300px;
+}
+.toolsDialog {
+	position: fixed;
+	font-family: Arial, Helvetica, sans-serif;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 100000;
+	opacity:0;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+	display: none;
+}
+.toolsDialog:target {
+	opacity:1;
+	pointer-events: auto;
+	display: block;
+}
+
+.toolsDialog > div {
+	width: 200px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+	background: #fff;
+	background: -moz-linear-gradient(#fff, #bbb);
+	background: -webkit-linear-gradient(#fff, #bbb);
+	background: -o-linear-gradient(#fff, #bbb);
+}
+#TestEngine {
+	position: relative;
+	margin-left: 0px;
+	margin-top: 0px;
+	min-width: inherit;
+}
+
+.btnStartTest {
+	margin: 0px;
+	padding: 2px;
+}
+
+.btnRetakeTest {
+	margin: 0px;
+	padding: 2px;
+}
+
+#teForm {
+}
+
+#teForm blockquote {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	position: relative;
+	top: -1.3em;
+}
+
+#teForm div.teChoice {
+	margin-left: 40px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	position: relative;
+	top: -1.3em;
+}
+
+.teChoiceBtn {
+	vertical-align: middle;
+}
+
+#teFeedback {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	max-width: 80%;
+	background-color: #FFFFFF;
+	border: 2px solid #999999;
+	margin: 0px;
+	padding: 10px;
+	box-shadow: 5px 5px 4px rgba(0,0,0,0.3);
+}
+
+#RTAudioControl {
+	position: relative;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+	background-color: #1B3E3F;
+	height: 30px;
+}
+
+#RTAudioControl #playPausePageAudio {
+	float: left;
+	margin-left: 1px;
+	margin-top: 1px;
+}
+
+#RTAudioControl #RTAudioControlDisplay {
+	position: absolute;
+	margin-top: 8px;
+	width: 70%;
+	height: 30px;
+	left: 15%;
+	text-align: center;
+	font-weight: bold;
+	font-size: 10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+}
+
+#RTAudioControl #mutePageAudio {
+	float: right;
+	margin-right: 1px;
+	margin-top: 1px;
+}
+
+/* Customize the <progress> tag. Step 1, turn off all styling. Step 2, style the bar background. Step 3, style the bar value. */
+
+/* Step 1, turn off all styling and give it dimensions */
+	progress,          /* All HTML5 progress enabled browsers */
+	progress[role]     /* polyfill */
+	{
+	
+		/* Turns off styling - not usually needed, but good to know. */
+		appearance: none;
+		-moz-appearance: none;
+		-webkit-appearance: none;
+	
+		/* gets rid of default border in Firefox and Opera. */ 
+		border: none;
+	
+		/* Needs to be in here for Safari polyfill so background images work as expected. */
+		background-size: auto;
+		
+		/* Dimensions */
+		width: 100%;
+		height: 15px;
+		
+	}
+	
+	/* Polyfill */
+	progress[role]:after {
+		background-image: none; /* removes default background from polyfill */
+	}
+	
+	/* Ensure fallback text doesn't appear in polyfill */
+	progress[role] strong {
+		display: none;
+	}
+	
+/* Step 2, style the progress bar background */
+	progress,                          /* Firefox  */ 
+	progress[role][aria-valuenow] {    /* Polyfill */
+	   background: #EEEEEE !important; /* !important is needed by the polyfill */
+	}
+	
+	/* Chrome */
+	progress::-webkit-progress-bar {
+		background: #EEEEEE;
+	}
+	
+/* Step 3, style the progress bar value */
+	/* IE10 */
+	progress {
+		color: #0099FF;
+	}
+	
+	/* Firefox */
+	progress::-moz-progress-bar { 
+		background: #0099FF;	
+	}
+	
+	/* Chrome */
+	progress::-webkit-progress-value {
+		background: #0099FF;
+	}
+	
+	/* Polyfill */
+	progress[aria-valuenow]:before  {
+		background: #0099FF;
+	}
+	/* Special style for browsers that don't support the <progress> tag (e.g. Safari prior to version 6) */
+	progress strong {
+		color: #000000;
+	}
+	
+/* End styles for <progress> tag */
+
+#TextLeft p:first-child {
+	margin-top: 0px;
+}
+
+#TextLeft a[id=question]+p {
+	margin-top: 0px;
+}
+
+#CYUEngine {
+	width: 100%;
+	background-color: #FFFFFF;
+	position: relative;
+}
+
+#cyuForm {
+}
+
+#cyuForm blockquote {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	position: relative;
+	top: -1.3em;
+}
+
+.cyuChoiceBtn {
+	vertical-align: middle;
+}
+
+#cyuFeedback {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	max-width: 80%;
+	background-color: #FFFFFF;
+	border: 2px solid #999999;
+	margin: 0px;
+	padding: 10px;
+	box-shadow: 5px 5px 4px rgba(0,0,0,0.3);
+}
+
+#cyuFeedback p {
+	margin: 10px;
+}
+
+.cyu_icon {
+	padding-right: 5px;
+}
+
+img.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type="button"], input[type="submit"] {
+	cursor: pointer;
+	background-color: #EEEEEE;
+	border: 1px solid #434343;
+	border-radius: 4px;
+	margin: 0px;
+	padding: 5px 10px;
+	color: #000000;
+	/*box-shadow: 2px 2px 4px #888888;*/
+	text-shadow: 1px 1px rgba(255,255,255,0.3);
+	/* Gradient styles */
+	background: -moz-linear-gradient(top, #feff99 25%, #dc482b 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(25%,#feff99), color-stop(100%,#dc482b)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #feff99 25%,#dc482b 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #feff99 25%,#dc482b 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #feff99 25%,#dc482b 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #feff99 25%,#dc482b 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feff99', endColorstr='#dc482b',GradientType=0 ); /* IE6-9 */
+}
+
+.helpLink {
+	margin-left: 10px;
+	font-size: 1.2em;
+}
+
+.inactiveLink {
+	color: #666666;
+}
+
+.no_margin_bottom {
+	margin-bottom: 0px;
+}
+
+.no_margin_top {
+	margin-top: 0px;
+}
+
+li.tight_list+li.tight_list {
+	margin-top: 0.1em;
+	margin-bottom: 0.1em;
+}
+
+

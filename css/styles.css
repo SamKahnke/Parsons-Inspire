@@ -23,6 +23,10 @@ body {
     font-size: 12px;
 }
 
+.nav-item:hover {
+    color: #f00;
+}
+
 .title-container {
     justify-content: space-between;
     flex-direction: row;
@@ -140,4 +144,12 @@ a.nav-link {
     background-color: #fff;
     height: 12px;
     width: 130px;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #fff;
+}
+
+progress::-webkit-progress-value {
+	background: #900;
 }

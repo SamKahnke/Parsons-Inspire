@@ -41,24 +41,13 @@
             </div> 
         </div>
         <div class="container controls">
-            <button class="control-button">BACK</button>
+            <button class="control-button"><img class="back-arrow-icon" src="imgs\BackArrow.png" width="11px" height="11px" />BACK</button>
             <div class="audio-player">
+                <button class="audio-button"><img src="imgs\ForwardArrow.png" width="11px" height="11px" /></button>
                 <progress class="progress-bar" value="50" max="100"></progress>
+                <button class="audio-button"><img src="imgs\Volume.png" width="15px" height="12px" /></button>
             </div>
-            <button class="control-button">NEXT</button>
+            <button class="control-button">NEXT<img class="forward-arrow-icon" src="imgs\ForwardArrow.png" width="11px" height="11px" /></button>
         </div>  
     </body>
 </html>
-
-<div id="audioControl">
-    <audio id="pageAudio" preload="auto">
-    </audio>
-    <div id="RTAudioControl">
-        <div id="RTAudioControlDisplay"><progress value="6.846668314162472" max="100"><strong>7%</strong></progress>
-        </div>
-        <div style="clear: both;"></div>
-    </div>
-    <script type="text/javascript">
-        playAudio();
-    </script>
-</div>

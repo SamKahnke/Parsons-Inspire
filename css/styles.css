@@ -136,7 +136,7 @@ a.nav-link {
     width: 190px;
     height: 20px;
     margin: 0 18px;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -159,4 +159,19 @@ progress::-webkit-progress-value {
     margin: 0 10px 0 70px;
     transform: translateY(-14px);
     box-shadow: 1px 2px 3px #333;
+}
+
+.audio-button {
+    background: none;
+    border: none;
+}
+
+.back-arrow-icon {
+    margin: 0 3px;
+    transform: translate(-8px, -2px);
+}
+
+.forward-arrow-icon {
+    margin: 0 3px;
+    transform: translate(8px, -2px);
 }

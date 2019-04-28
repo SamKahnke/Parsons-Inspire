@@ -42,6 +42,7 @@ body {
     font-size: 20px;
     font-weight: normal;
     color: #bcbcbc;
+    transform: translateY(-8px);
 }
 
 .page-number {
@@ -152,4 +153,10 @@ progress[value]::-webkit-progress-bar {
 
 progress::-webkit-progress-value {
 	background: #900;
+}
+
+.logo {
+    margin: 0 10px 0 70px;
+    transform: translateY(-14px);
+    box-shadow: 1px 2px 3px #333;
 }

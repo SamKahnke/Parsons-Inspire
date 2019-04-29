@@ -1,0 +1,106 @@
+#RTAudioControl {
+	position: relative;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+	background-color: #1B3E3F;
+	height: 30px;
+}
+
+#RTAudioControl #playPausePageAudio {
+	float: left;
+	margin-left: 1px;
+	margin-top: 1px;
+}
+
+#RTAudioControl #RTAudioControlDisplay {
+	position: absolute;
+	margin-top: 8px;
+	width: 70%;
+	height: 30px;
+	left: 15%;
+	text-align: center;
+	font-weight: bold;
+	font-size: 10px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+}
+
+#RTAudioControl #mutePageAudio {
+	float: right;
+	margin-right: 1px;
+	margin-top: 1px;
+}
+
+/* Customize the <progress> tag. Step 1, turn off all styling. Step 2, style the bar background. Step 3, style the bar value. */
+
+/* Step 1, turn off all styling and give it dimensions */
+	progress,          /* All HTML5 progress enabled browsers */
+	progress[role]     /* polyfill */
+	{
+	
+		/* Turns off styling - not usually needed, but good to know. */
+		appearance: none;
+		-moz-appearance: none;
+		-webkit-appearance: none;
+	
+		/* gets rid of default border in Firefox and Opera. */ 
+		border: none;
+	
+		/* Needs to be in here for Safari polyfill so background images work as expected. */
+		background-size: auto;
+		
+		/* Dimensions */
+		width: 100%;
+		height: 15px;
+		
+	}
+	
+	/* Polyfill */
+	progress[role]:after {
+		background-image: none; /* removes default background from polyfill */
+	}
+	
+	/* Ensure fallback text doesn't appear in polyfill */
+	progress[role] strong {
+		display: none;
+	}
+	
+/* Step 2, style the progress bar background */
+	progress,                          /* Firefox  */ 
+	progress[role][aria-valuenow] {    /* Polyfill */
+	   background: #EEEEEE !important; /* !important is needed by the polyfill */
+	}
+	
+	/* Chrome */
+	progress::-webkit-progress-bar {
+		background: #EEEEEE;
+	}
+	
+/* Step 3, style the progress bar value */
+	/* IE10 */
+	progress {
+		color: #0099FF;
+	}
+	
+	/* Firefox */
+	progress::-moz-progress-bar { 
+		background: #0099FF;	
+	}
+	
+	/* Chrome */
+	progress::-webkit-progress-value {
+		background: #0099FF;
+	}
+	
+	/* Polyfill */
+	progress[aria-valuenow]:before  {
+		background: #0099FF;
+	}
+	/* Special style for browsers that don't support the <progress> tag (e.g. Safari prior to version 6) */
+	progress strong {
+		color: #000000;
+	}
+	
+/* End styles for <progress> tag */

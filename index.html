@@ -41,13 +41,34 @@
             </div> 
         </div>
         <div class="container controls">
-            <button class="control-button"><img class="back-arrow-icon" src="imgs\BackArrow.png" width="11px" height="11px" />BACK</button>
+            <button class="control-button">
+                <img class="back-arrow-icon" id="backButton" src="imgs\BackArrow.png" width="11px" height="11px" />
+                <img class="back-arrow-icon" id="redBackButton" style="display:none; margin:0;" src="imgs\BackArrowRed.png" width="11px" height="11px" />
+                BACK
+            </button>
             <div class="audio-player">
-                <button class="audio-button"><img src="imgs\ForwardArrow.png" width="11px" height="11px" /></button>
+                <button class="audio-button" id="play-button" onclick="togglePlay()"><img src="imgs\ForwardArrow.png" width="11px" height="11px" /></button>
+                <button class="audio-button" style="display:none" id="pause-button" onclick="togglePause()"><img src="imgs\Pause.png" width="11px" height="11px" /></button>
                 <progress class="progress-bar" value="50" max="100"></progress>
                 <button class="audio-button"><img src="imgs\Volume.png" width="15px" height="12px" /></button>
             </div>
             <button class="control-button">NEXT<img class="forward-arrow-icon" src="imgs\ForwardArrow.png" width="11px" height="11px" /></button>
-        </div>  
+        </div>
+        <script>
+            function togglePlay() {
+                document.getElementById("play-button").style.display = "none";
+                document.getElementById("pause-button").style.display = "block";
+            }
+
+            function togglePause() {
+                document.getElementById("play-button").style.display = "block";
+                document.getElementById("pause-button").style.display = "none";
+            }
+
+            // function hoverBack() {
+            //     document.getElementById("backButton").style.display = "none";
+            //     document.getElementById("redBackButton").style.display = "block";
+            // }
+        </script> 
     </body>
 </html>

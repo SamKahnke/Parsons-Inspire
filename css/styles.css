@@ -126,6 +126,19 @@ a.nav-link {
     height: 20px;
 }
 
+.control-button:hover, .audio-button:hover {
+    cursor: pointer;
+    color: #f00;
+}
+
+/* .control-button:hover #backButton {
+    display: none;
+} */
+
+.control-button:hover #redBackButton {
+    display: block;
+}
+
 .audio-player {
     display: flex;
     color: #fff;

@@ -86,7 +86,7 @@ body {
 a.nav-link {
     display: inline-flex;
     padding: 4px 30px;
-    height: 28px;
+    height: 33px;
     border: none;
     transform: translateY(-1px);
 }

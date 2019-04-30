@@ -133,12 +133,28 @@ a.nav-link {
     cursor: pointer;
 }
 
-/* .control-button:hover #backButton {
+.control-button:hover #backButton {
     display: none;
-} */
+}
+
+.control-button #redBackButton {
+    display: none;
+}
 
 .control-button:hover #redBackButton {
-    display: block;
+    display: inline;
+}
+
+.control-button:hover #forwardButton {
+    display: none;
+}
+
+.control-button #redForwardButton {
+    display: none;
+}
+
+.control-button:hover #redForwardButton {
+    display: inline;
 }
 
 .audio-player {

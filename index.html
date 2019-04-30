@@ -42,8 +42,8 @@
         </div>
         <div class="container controls">
             <button class="control-button">
-                <img class="back-arrow-icon" id="backButton" src="imgs\BackArrow.png" width="11px" height="11px" />
-                <img class="back-arrow-icon" id="redBackButton" style="display:none; margin:0;" src="imgs\BackArrowRed.png" width="11px" height="11px" />
+                <img class="back-arrow-icon" id="backButton" src="imgs\BackArrow.png"/>
+                <img class="back-arrow-icon" id="redBackButton" src="imgs\BackArrowRed.png"/>
                 BACK
             </button>
             <div class="audio-player">
@@ -52,7 +52,10 @@
                 <progress class="progress-bar" value="50" max="100"></progress>
                 <button class="audio-button"><img src="imgs\Volume.png" width="15px" height="12px" /></button>
             </div>
-            <button class="control-button">NEXT<img class="forward-arrow-icon" src="imgs\ForwardArrow.png" width="11px" height="11px" /></button>
+            <button class="control-button">NEXT
+                <img class="forward-arrow-icon" id="forwardButton" src="imgs\ForwardArrow.png"/>
+                <img class="forward-arrow-icon" id="redForwardButton" src="imgs\ForwardArrowRed.png" />
+            </button>
         </div>
         <script>
             function togglePlay() {
@@ -65,10 +68,10 @@
                 document.getElementById("pause-button").style.display = "none";
             }
 
-            // function hoverBack() {
-            //     document.getElementById("backButton").style.display = "none";
-            //     document.getElementById("redBackButton").style.display = "block";
-            // }
+            function hoverBack() {
+                document.getElementById("backButton").style.display = "none";
+                document.getElementById("redBackButton").style.display = "block";
+            }
         </script> 
     </body>
 </html>

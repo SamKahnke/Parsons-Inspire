@@ -15,7 +15,7 @@ body {
 }
 
 .navbar {
-    background-color: #707070;
+    background-color: #4C4F53;
     padding: 0;
     justify-content: flex-end;
 }
@@ -27,7 +27,7 @@ body {
 }
 
 .nav-item:hover {
-    color: #f00;
+    color: #fff;
 }
 
 .title-container {
@@ -52,9 +52,13 @@ body {
 .page-number {
     display: inline-flex;
     float: right;
-    padding: 20px 75px 6px 0;
+    padding: 20px 15px 6px 0;
     font-size: 16px;
     font-weight: bold;
+}
+
+.nav-wrapper {
+    background-color: #B4222C;
 }
 
 .slide-nav {
@@ -62,7 +66,8 @@ body {
     text-align: center;
     justify-content: center;
     height: 30px;
-    background-color: #B4222C;
+    max-width: 1400px;
+    margin: 0 auto !important;
 }
 
 .slide-nav>.nav-item {
@@ -92,9 +97,15 @@ a.nav-link {
     transform: translateY(-1px);
 }
 
-.nav-link.active.show, .nav-link:hover {
+.nav-link.active.show {
     color: #a00;
     text-decoration: underline;
+}
+
+a.nav-link:hover {
+    color: #a00;
+    text-decoration: underline;
+    background-color: #fff;
 }
 
 .nav-tabs {
@@ -108,8 +119,12 @@ a.nav-link {
 
 .tab-pane {
     background-color: #fff;
-    padding: 20px;
+    padding:30px 40px;
     max-width: 1280px;
+}
+
+.content-heading {
+    color: #a00;
 }
 
 .controls {
@@ -132,30 +147,7 @@ a.nav-link {
 
 .control-button:hover, .audio-button:hover {
     cursor: pointer;
-}
-
-.control-button:hover #backButton {
-    display: none;
-}
-
-.control-button #redBackButton {
-    display: none;
-}
-
-.control-button:hover #redBackButton {
-    display: inline;
-}
-
-.control-button:hover #forwardButton {
-    display: none;
-}
-
-.control-button #redForwardButton {
-    display: none;
-}
-
-.control-button:hover #redForwardButton {
-    display: inline;
+    background-color: #B4222C;
 }
 
 .audio-player {
@@ -188,7 +180,7 @@ progress::-webkit-progress-value {
 }
 
 .logo {
-    margin: 0 10px 0 75px;
+    margin: 0 10px 0 15px;
     transform: translateY(-14px);
     box-shadow: 1px 2px 3px #333;
     height: 80px;
@@ -209,6 +201,12 @@ progress::-webkit-progress-value {
 .forward-arrow-icon {
     margin: 0 3px;
     transform: translate(8px, -2px);
+    height: 13px;
+    width: 13px;
+}
+
+.forward-icon {
+    margin: 0 5px;
     height: 13px;
     width: 13px;
 }

@@ -18,43 +18,46 @@
             </div>
         </nav>
         <div class="container-flex title-container">
-            <img class="logo" src="imgs\ParsonsLogo.png" />
-            <h1 class="slide-title">Project Strategy - Best Practices</h1>
-            <p class="page-number">4 of 4</p>
+            <div class="container">
+                <img class="logo" src="imgs\ParsonsLogo.png" />
+                <h1 class="slide-title">Project Strategy - Best Practices</h1>
+                <p class="page-number">4 of 4</p>
+            </div>
         </div>
-        <ul class="nav nav-tabs slide-nav">
-            <li class="active nav-item"><a class="nav-link" data-toggle="tab" href="#overview">Overview</a></li>
-            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#project-strat-dev">Project Strategy Development</a></li>
-            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#checklist-sections">Sections in Checklist</a></li>
-        </ul>
+        <div class="nav-wrapper">
+            <ul class="nav nav-tabs slide-nav">
+                <li class="active nav-item"><a class="nav-link" data-toggle="tab" href="#overview">Overview</a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#project-strat-dev">Project Strategy Development</a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#checklist-sections">Sections in Checklist</a></li>
+            </ul>
+        </div>
         <div class="tab-content">
             <div id="overview" class="tab-pane active container">
-                <h2>Overview</h2>  
+                <h3 class="content-heading">Overview</h3>
+                <p>Some content in overview.</p>
             </div>
             <div id="project-strat-dev" class="tab-pane container">
-                <h3>Menu 1</h3>
+                <h3 class="content-heading">Menu 1</h3>
                 <p>Some content in menu 1.</p>
             </div>
             <div id="checklist-sections" class="tab-pane container">
-                <h3>Menu 2</h3>
+                <h3 class="content-heading">Menu 2</h3>
                 <p>Some content in menu 2.</p>
             </div> 
         </div>
         <div class="container controls">
             <button class="control-button">
                 <img class="back-arrow-icon" id="backButton" src="imgs\BackArrow.png"/>
-                <img class="back-arrow-icon" id="redBackButton" src="imgs\BackArrowRed.png"/>
                 BACK
             </button>
             <div class="audio-player">
-                <button class="audio-button" id="play-button" onclick="togglePlay()"><img src="imgs\ForwardArrow.png" width="11px" height="11px" /></button>
-                <button class="audio-button" style="display:none" id="pause-button" onclick="togglePause()"><img src="imgs\Pause.png" width="11px" height="11px" /></button>
+                <button class="audio-button" id="play-button" onclick="togglePlay()"><img class="forward-icon" src="imgs\ForwardArrow.png" /></button>
+                <button class="audio-button" style="display:none" id="pause-button" onclick="togglePause()"><img class="forward-icon" src="imgs\Pause.png" /></button>
                 <progress class="progress-bar" value="50" max="100"></progress>
-                <button class="audio-button"><img src="imgs\Volume.png" width="15px" height="12px" /></button>
+                <button class="audio-button"><img class="forward-icon" src="imgs\Volume.png" width="15px" height="12px" /></button>
             </div>
             <button class="control-button">NEXT
                 <img class="forward-arrow-icon" id="forwardButton" src="imgs\ForwardArrow.png"/>
-                <img class="forward-arrow-icon" id="redForwardButton" src="imgs\ForwardArrowRed.png" />
             </button>
         </div>
         <script>
@@ -66,11 +69,6 @@
             function togglePause() {
                 document.getElementById("play-button").style.display = "block";
                 document.getElementById("pause-button").style.display = "none";
-            }
-
-            function hoverBack() {
-                document.getElementById("backButton").style.display = "none";
-                document.getElementById("redBackButton").style.display = "block";
             }
         </script> 
     </body>

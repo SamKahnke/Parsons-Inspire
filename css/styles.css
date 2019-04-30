@@ -1,6 +1,5 @@
 body {
     background-color: #F1F2F4;
-    max-width: 1400px;
     margin: 0 auto !important;
     font-family: Arial, sans-serif;
 }
@@ -36,8 +35,9 @@ body {
     flex-direction: row;
     background-color: #F1F2F4;
     height: 60px;
-    margin: 0;
     padding: 0;
+    max-width: 1400px;
+    margin: 0 auto !important;
 }
 
 .slide-title {

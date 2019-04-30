@@ -81,22 +81,22 @@
 /* Step 3, style the progress bar value */
 	/* IE10 */
 	progress {
-		color: #0099FF;
+		color: #900;
 	}
 	
 	/* Firefox */
 	progress::-moz-progress-bar { 
-		background: #0099FF;	
+		background: #900;	
 	}
 	
 	/* Chrome */
 	progress::-webkit-progress-value {
-		background: #0099FF;
+		background: #900;
 	}
 	
 	/* Polyfill */
 	progress[aria-valuenow]:before  {
-		background: #0099FF;
+		background: #900;
 	}
 	/* Special style for browsers that don't support the <progress> tag (e.g. Safari prior to version 6) */
 	progress strong {
